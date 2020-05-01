@@ -15,8 +15,10 @@ public class AulaInterfaces {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Aula dia 30/04/2020");
-        System.out.println("Interfaces");
+        Ferrari f1 = new Ferrari();
+        Rota rota1 = new Rota();
+        
+        rota1.irCentro(f1);
     }
     
 }
