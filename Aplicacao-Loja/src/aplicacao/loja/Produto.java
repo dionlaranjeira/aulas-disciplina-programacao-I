@@ -1,4 +1,3 @@
-
 package aplicacao.loja;
 
 public class Produto {
@@ -11,7 +10,13 @@ public class Produto {
     public int getQuantidadeProdutos() {
         return quantidadeProdutos;
     }
-
+    
+    
+    //Esse método tira um produto da quantidade de produtos
+    public void baixaProduto(){
+    quantidadeProdutos--;
+    }
+    
     public void setQuantidadeProdutos(int quantidadeProdutos) {
         this.quantidadeProdutos = quantidadeProdutos;
     }
