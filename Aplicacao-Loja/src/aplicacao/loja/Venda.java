@@ -7,7 +7,6 @@ public class Venda {
     ArrayList<Produto> produtosVendas = new ArrayList<>();
     private String dataVenda;
     
-    
     public double calculaTroco(double dinheiro){
         if(dinheiro - valorFinalVenda() <0){
         return -1;
@@ -31,7 +30,6 @@ public class Venda {
             System.out.println(p.getDescricao() + " em falta no estoque!");
         }
     }
-    
     
     //Esse método mostra o valor final a ser pago pelo cliente
     public double valorFinalVenda() {

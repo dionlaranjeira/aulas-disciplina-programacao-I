@@ -1,12 +1,20 @@
 package aplicacao.loja;
 
 public class Produto {
+    private static int codigos = 0;
+    
     private int quantidadeProdutos;
     private String codigo;
     private String descricao;
     private double valorCompra;
     private double valorFinal;
-
+    
+    //Construtor
+    public Produto() {
+        codigos++;
+        codigo = String.valueOf(codigos);
+    }
+    
     public int getQuantidadeProdutos() {
         return quantidadeProdutos;
     }
@@ -23,10 +31,6 @@ public class Produto {
 
     public String getCodigo() {
         return codigo;
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
     }
 
     public String getDescricao() {
